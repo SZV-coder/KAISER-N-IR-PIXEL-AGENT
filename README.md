@@ -46,6 +46,6 @@ curl -X POST http://localhost:3000/api/decide \
 
 ## Run the Android app
 
-Live API: `https://kaiser-noir-twin-mind.vercel.app/api/decide` (Gemini).
+Live API: `https://kaiser-noir-twin-mind.vercel.app/api/decide` (Gemini). Vercel deploys `api/` to production automatically on every push to `main`.
 
 Open `android/` in Android Studio (Ladybug or newer) and run on your Pixel, or grab the debug APK from the latest CI run's artifacts. The app calls the live API and falls back to an on-device engine (`OnDeviceTwins.kt`) when offline. Each verdict is labeled Live AI · Gemini, Cloud · practice mode, or Debated on this phone.
